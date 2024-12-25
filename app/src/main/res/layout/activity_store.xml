@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название продукта"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена продукта"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/productDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Краткое описание продукта"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        android:scrollbars="vertical" />
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Изображение продукта" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение" />
+
+
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить продукт" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выход" />
+</LinearLayout>
